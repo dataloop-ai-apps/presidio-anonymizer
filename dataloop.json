@@ -1,0 +1,110 @@
+{
+  "displayName": "Presidio Anonymizer",
+  "name": "presidio-anonymizer",
+  "description": "Presidio Anonymizer for Dataloop to anonymize text files using Microsoft Presidio",
+  "scope": "public",
+  "version": "0.0.1",
+  "attributes": {
+    "Provider": "Microsoft",
+    "Category": "Application",
+    "Deployed By": "Microsoft",
+    "License": "MIT",
+    "Media Type": ["Text"],
+    "Application Type": ["Pipeline Node"],
+    "Hub": ["Dataloop"]
+  },
+  "codebase": {
+    "type": "git",
+    "gitUrl": "https://github.com/dataloop-ai-apps/presidio-anonymizer",
+    "gitTag": "0.0.1"
+  },
+  "components": {
+    "pipelineNodes": [
+      {
+        "invoke": {
+          "type": "function",
+          "namespace": "presidio-anonymizer-service.presidio-anonymizer-module.anonymize_item"
+        },
+        "name": "Presidio Anonymizer",
+        "categories": ["Anonymization"],
+        "displayName": "Presidio Anonymizer",
+        "description": "Presidio Anonymizer for Dataloop to anonymize text files using Microsoft Presidio",
+        "scope": "project",
+        "configuration": {
+          "fields": [
+            {
+              "name": "overwrite",
+              "title": "Overwrite",
+              "props": {
+                "type": "string",
+                "required": true,
+                "options": [
+                  {
+                    "label": "True",
+                    "value": "/"
+                  },
+                  {
+                    "label": "False",
+                    "value": "/anonymized"
+                  }
+                ],
+                "default": "/"
+              },
+              "rules": [
+                {
+                  "type": "required",
+                  "effect": "error"
+                }
+              ],
+              "widget": "dl-select"
+            }
+          ]
+        }
+      }
+    ],
+    "modules": [
+      {
+        "name": "presidio-anonymizer-module",
+        "entryPoint": "anonymize_item.py",
+        "className": "PresidioAnonymizer",
+        "computeConfig": "presidio-anonymizer-service",
+        "functions": [
+          {
+            "name": "anonymize_item",
+            "input": [
+              {
+                "type": "Item",
+                "name": "item"
+              }
+            ],
+            "output": [
+              {
+                "type": "Item",
+                "name": "item"
+              }
+            ],
+            "displayIcon": "icon-dl-microsoft"
+          }
+        ]
+      }
+    ],
+    "computeConfigs": [
+      {
+        "name": "presidio-anonymizer-service",
+        "moduleName": "presidio-anonymizer-module",
+        "runtime": {
+          "podType": "regular-xs",
+          "runnerImage": "gcr.io/viewo-g/piper/agent/cpu/presidio-anonymizer:0.0.1",
+          "numReplicas": 1,
+          "concurrency": 15,
+          "autoscaler": {
+            "type": "rabbitmq",
+            "minReplicas": 1,
+            "maxReplicas": 2,
+            "queueLength": 10
+          }
+        }
+      }
+    ]
+  }
+}
