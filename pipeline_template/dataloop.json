@@ -1,6 +1,6 @@
 {
   "name": "pii-anonymizer-pipeline",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "attributes": {
     "Category": ["Pipeline", "Blueprint"],
     "Hub": ["Dataloop"],
@@ -14,7 +14,7 @@
   "codebase": {
     "type": "git",
     "gitUrl": "https://github.com/dataloop-ai-apps/presidio-anonymizer",
-    "gitTag": "0.0.2"
+    "gitTag": "0.0.3"
   },
   "components": {
     "pipelineTemplates": [
