@@ -65,7 +65,7 @@
     "modules": [
       {
         "name": "presidio-anonymizer-module",
-        "entryPoint": "anonymize_item.py",
+        "entryPoint": "anonymizer/anonymize_item.py",
         "className": "PresidioAnonymizer",
         "computeConfig": "presidio-anonymizer-service",
         "functions": [
