@@ -226,16 +226,10 @@
   },
   "dependencies": [
     {
-      "name": "medical-records-dataset"
-    },
-    {
       "name": "presidio-anonymizer"
     },
     {
       "name": "rag-pdf-processor"
     }
-  ],
-  "variables": {
-    "medical_dataset__dataset": "medical-records-dataset.datasets.Medical Records Dataset"
-  }
+  ]
 }
