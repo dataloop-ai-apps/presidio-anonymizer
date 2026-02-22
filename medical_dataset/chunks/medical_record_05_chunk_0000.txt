@@ -1,0 +1,47 @@
+## **Downtown Health Partners — Patient Medical Record**
+**Encounter ID:** ENC-&lt;US_DRIVER_LICENSE> **Visit Date:** &lt;DATE_TIME> **Provider:** Dr. &lt;PERSON>
+## **Patient Information**
+**==> picture [532 x 117] intentionally omitted &lt;==**
+**----- Start of picture text -----**&lt;br>
+|||||
+|---|---|---|---|
+|Full Name|Claire Sims|DOB|&lt;DATE_TIME>|
+|Sex|Female|MRN|&lt;US_BANK_NUMBER>|
+|SSN|&lt;US_SSN>|Phone|&lt;PHONE_NUMBER>|
+|&lt;EMAIL_ADDRESS>|Address|715 &lt;PERSON> Apt. 717|
+|Grahammouth, OR 16374|
+|Insurance|Cigna|Policy ID|&lt;PHONE_NUMBER>|
+**----- End of picture text -----**&lt;br>
+## **Clinical Summary**
+**Diagnoses:**
+- Migraine without aura (&lt;US_DRIVER_LICENSE>.0)
+- Low back pain (&lt;US_DRIVER_LICENSE>.5)
+- Acute bronchitis (&lt;US_DRIVER_LICENSE>.9)
+## **Medications:**
+- Atorvastatin 20mg PO &lt;DATE_TIME>
+- Cetirizine 10mg PO daily
+- Fluticasone nasal spray &lt;DATE_TIME>
+- Metformin 500mg PO BID
+## **Allergies:**
+- Latex (contact dermatitis)
+- Sulfa drugs (hives)
+## **Vitals**
+**==> picture [272 x 122] intentionally omitted &lt;==**
+**----- Start of picture text -----**&lt;br>
+|||
+|---|---|
+|Height|191 cm|
+|Weight|50 kg|
+|BP|140/97 mmHg|
+|HR|90 bpm|
+|Temp|36.3 °C|
+|SpO2|98 %|
+**----- End of picture text -----**&lt;br>
+## **Laboratory Results**
+|**Test**|**Result**|**Reference**|
+|---|---|---|
+|HbA1c|6.9 %|4.0–5.6|
+|LDL|115 mg/dL|&lt; 100|
+|Creatinine|1.21 mg/dL|0.6–1.3|
+|TSH|0.95 mIU/L|0.4–4.0|
+_Synthetic testing document — contains no real pat

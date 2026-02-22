@@ -1,0 +1,48 @@
+## **Greenwood Urgent Care — Patient Medical Record**
+**Encounter ID:** ENC-&lt;US_DRIVER_LICENSE> **Visit Date:** &lt;DATE_TIME> **Provider:** Dr. &lt;PERSON>
+## **Patient Information**
+**==> picture [532 x 117] intentionally omitted &lt;==**
+**----- Start of picture text -----**&lt;br>
+|||||
+|---|---|---|---|
+|Full Name|Gloria Hill|DOB|&lt;DATE_TIME>|
+|Sex|Male|MRN|&lt;US_BANK_NUMBER>|
+|SSN|&lt;US_SSN>|Phone|&lt;PHONE_NUMBER>|
+|&lt;EMAIL_ADDRESS>|Address|159 &lt;LOCATION> Pines|
+|Christophertown, MO 39885|
+|Insurance|Aetna|Policy ID|&lt;US_DRIVER_LICENSE>|
+**----- End of picture text -----**&lt;br>
+## **Clinical Summary**
+**Diagnoses:**
+- Seasonal allergic rhinitis (&lt;US_DRIVER_LICENSE>.2)
+- Hyperlipidemia (&lt;US_DRIVER_LICENSE>.5)
+- Generalized anxiety disorder (&lt;US_DRIVER_LICENSE>.1)
+- Low back pain (&lt;US_DRIVER_LICENSE>.5)
+## **Medications:**
+- Omeprazole 20mg PO daily
+- Albuterol inhaler PRN
+- Atorvastatin 20mg PO &lt;DATE_TIME>
+- Lisinopril 10mg PO daily
+- Sertraline 50mg PO daily
+## **Allergies:**
+- Latex (contact dermatitis)
+## **Vitals**
+**==> picture [272 x 122] intentionally omitted &lt;==**
+**----- Start of picture text -----**&lt;br>
+|||
+|---|---|
+|Height|154 cm|
+|Weight|120 kg|
+|BP|121/84 mmHg|
+|HR|88 bpm|
+|Temp|36.2 °C|
+|SpO2|97 %|
+**----- End of picture text -----**&lt;br>
+## **Laboratory Results**
+|**Test**|**Result**|**Reference**|
+|---|---|---|
+|HbA1c|9.3 %|4.0–5.6|
+|LDL|188 mg/dL|&lt; 100|
+|Creatinine|0.95 mg/dL|0.6–1.3|
+|TSH|2.7 mIU/L|0.4–4.0|
+_Synthetic testing document — contains no real pat
